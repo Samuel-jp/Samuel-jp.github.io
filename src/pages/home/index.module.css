@@ -1,0 +1,224 @@
+.container {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.slogen {
+  position: absolute;
+  top: 50%;
+  max-width: 1020px;
+  width: 100%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  padding-left: 42px;
+  text-shadow: 1px 1px 5px black;
+}
+.slogenText {
+  max-width: 700px;
+}
+.img {
+  border: none;
+  outline: none;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 350px;
+}
+.imgContain {
+  object-fit: contain!important;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1020px;
+  margin: 60px 0;
+  position: relative;
+}
+.reverse {
+  flex-flow: row-reverse;
+}
+.product {
+  align-items: center;
+  width: 800px;
+  margin: 0;
+}
+.card {
+  width: 510px;
+  height: 270px;
+}
+.card img {
+  width: 510px;
+  height: 270px;
+  object-fit: cover;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 440px;
+  height: 270px;
+}
+.productCard {
+  width: 380px;
+  height: 380px;
+}
+.productCard img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+}
+.product .article {
+  width: 380px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+}
+.description {
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.sectionTitle {
+  height: 60px;
+  background-color: rgba(247, 247, 247);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconTitleContainer {
+  width: 1020px;
+  display: flex;
+  align-items: center;
+}
+.iconTitle {
+  font-weight: bold;
+  padding-left: 10px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #666;
+  border-left: 4px solid #2c8ed9;
+}
+.vipsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.vips {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(5, 156px);
+  grid-template-rows: repeat(2, 156px);
+  grid-gap: 55px 55px;
+}
+.vip {
+  width: 156px;
+  height: 156px;
+  background-color: #ddd;
+}
+
+@media (max-width: 1020px) {
+  .slogen {
+    padding: 0 45px;
+  }
+  .section {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    max-width: 510px;
+    max-height: 270px;
+    width: 98%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 510px;
+    max-height: 270px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .article {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 510px;
+    height: auto;
+    width: auto;
+  }
+  .title,
+  .description {
+    padding: 0 15px;
+    /* width: 512px; */
+  }
+  .product {
+    width: auto;
+    height: auto;
+  }
+  .productCard {
+    max-width: 380px;
+    max-height: 380px;
+    width: auto;
+    height: auto;
+  }
+  .productCard img {
+    max-width: 380px;
+    max-height: 380px;
+    width: auto;
+    height: auto;
+  }
+  .product .article {
+    width: auto;
+    padding-bottom: 30px;
+  }
+  .iconTitleContainer {
+    max-width: 510px;
+    display: flex;
+    align-items: center;
+    width: 98%;
+  }
+  .vips {
+    width: auto;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: repeat(2, 120px);
+    grid-gap: 30px 30px;
+  }
+  .vip {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 799px) {
+  .vips {
+    width: auto;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(4, 120px);
+    grid-gap: 15px 15px;
+  }
+  .vip {
+    width: 120px;
+    height: 120px;
+  }
+}
